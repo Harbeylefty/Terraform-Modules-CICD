@@ -11,7 +11,7 @@ env:
 
 jobs:
   terraform:
-    name: Terraform-Infrastructure-Management.
+    name: Terraform-Infrastructure-Management
     runs-on: ubuntu-latest 
     steps:
       - name: Checkout codes
