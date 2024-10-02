@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "myterraformstatelockbucket2024"
-    key = "global/s3/terraform.tfstate"
+    key    = "global/s3/terraform.tfstate"
     region = "us-east-1"
   }
 
@@ -12,7 +12,7 @@ terraform {
     }
   }
 }
-  
+
 
 provider "aws" {
   region = "us-east-1"
