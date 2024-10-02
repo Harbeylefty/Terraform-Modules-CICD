@@ -1,10 +1,10 @@
 terraform {
   backend "s3" {
-    bucket = "myterraformstatefilebucket2024"
+    bucket         = "myterraformstatefilebucket2024"
     dynamodb_table = "state-lock"
-    key    = "global/s3/terraform.tfstate"
-    region = "us-east-1"
-    encrypt = true 
+    key            = "global/s3/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt        = true
   }
 
   required_providers {
